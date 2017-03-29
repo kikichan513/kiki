@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+body {
+min-height: 488px;
+/*background: #dfced6;
+*/background: #ecadbe;
+
+}
+
+
+#text-contain {
+  color: white;
+  text-align: center;
+vertical-align: middle;
+  font-size: 80px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+
+}
+#container {
+   margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 100px;
+    border-bottom: #6c9dd1;
+    overflow: hidden;
+  }
+  
+  #text-contain {
+    position: relative;
+    -webkit-animation: textslide 6s infinite;
+    animation: textslide 6s infinite;
+
+  }
+
+  @media only screen and (max-width: 579px) {
+
+   #text-contain { font-size: 60px;
+
+   margin-right: 30%;
+    margin-left: auto;
+    }
+
+}
+  
+  h1 {
+    height: 100px; /*Height should be equal to it's container*/
+    width: 100%;
+    text-align: center;
+    font-color: white;
+    }
+    
+/*  #text3 {font-size: 100px;}
+*/  
+  @-webkit-keyframes textslide {
+    0% {top: 15%;}
+    25% {top: 15%;}
+    30% {top: -85%;}
+    55% {top: -85%;}
+    60% {top: -190%;}
+    85% {top: -190%;}
+    100% {top: 15%;}
+    }
+  
+
+  @keyframes textslide {
+    0% {top: 15%;}
+    25% {top: 15%;}
+    30% {top: -85%;}
+    55% {top: -85%;}
+    60% {top: -190%;}
+    85% {top: -190%;}
+    100% {top: 15%;}
+    }
+
+
+.man {
+  top: 20px;
+  display: block;
+  width: 418px;
+  height: 418px;
+  position: relative;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* BACKGROUND IMAGE URL IN BOTTOM OF CSS (BASE64) */
+}
+
+.man {
+     background-image: url("https://s29.postimg.org/gnjqll7t3/final.png"); 
+       background-size:contain;
+}
+
+
+.man #left-eye, .man #right-eye {
+  border-radius: 10%;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 17px;
+  top: 162px;
+}
+.man #left-eye {
+  left: 154px;
+}
+.man #right-eye {
+  left: 240px;
+}
+.man #left-pupil, .man #right-pupil {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 70%;
+  display: block;
+  position: absolute;
+}
+
+/* JUST BUTTON STYLES */
+
+.button {
+  position: absolute;
+  top: 570px;
+  left: 50%;
+  margin-left: -120px;
+  color: white;
+  display: inline-block;
+  width: 240px;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s linear;
+   font-family: 'Montserrat', sans-serif;
+
+}
+.button:hover {
+  background: #FFF;
+  color: #ff87c3;
+}
+.button:hover span {
+  border-color: white;
+}
+.button span {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border: 1px solid white;
+  transition: all .3s linear;
+}
+.button span:nth-child(1) {
+  bottom: 5px;
+  right: 5px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+.button span:nth-child(2) {
+  bottom: 5px;
+  left: 5px;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+.button span:nth-child(3) {
+  top: 5px;
+  left: 5px;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+.button span:nth-child(4) {
+  top: 5px;
+  right: 5px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+/* 
+Background is in base64 format so to make code more readable I just moved it here.
+*/
