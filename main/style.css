@@ -313,13 +313,10 @@ a:hover, a:active {
 
 #hero a{
   text-align: center;
-  margin: auto;
-  padding-bottom:80px;
-  border: white;
+  padding-bottom:50px;
   border-radius: 25px;
-  background: white;
-  width: 80px;
-  color:black;
+  color:white;
+  display: inline-block;
 
 
 }
