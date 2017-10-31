@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Varela+Round');
+
 html, body {
   height: 100%;
 }
 
 body {
-  background: #808080;
+  background: #282931;
   display: flex;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Varela Round', sans-serif;  
 }
 
 .card {
   width: 350px;
   padding: 30px;
-  background: #e55ea2;
+  background: #fc3565;
   margin-right: 150px;
   margin-left:150px;
   transition: .3s ease;
@@ -30,7 +34,6 @@ body {
   background-position: 0 0;
   display: inline;
   transition: .5s ease-in-out;
-  font-family: raleway, arial, sans-serif;
   text-transform: uppercase;
 }
 .entry-title a {
@@ -41,7 +44,6 @@ body {
 small {
   margin-top: 20px;
   display: block;
-  font-family: raleway, arial, sans-serif;
   color: white;
   text-transform: uppercase;
 }
@@ -54,7 +56,6 @@ small a {
 span {
   display: block;
   margin-top: 10px;
-  font-family: raleway, arial, sans-serif;
   font-weight: 700;
   color: #702c19;
 }
