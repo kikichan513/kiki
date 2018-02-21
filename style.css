@@ -98,40 +98,50 @@ vertical-align: middle;
 }
 
 .man {
-     background-image: url("https://s29.postimg.org/gnjqll7t3/final.png"); 
+     background-image: url("https://s9.postimg.org/cmbd0z8xb/kikicircle.png"); 
        background-size:contain;
 }
 
 
 .man #left-eye, .man #right-eye {
+  border-radius: 40%;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 17px;
+  top: 160px;
+}
+.man #left-eye {
+  left: 130px;
+}
+.man #right-eye {
+  left: 190px;
+}
+.man #left-pupil, .man #right-pupil {
+  width: 13px;
+  height: 13px;
+  background: white;
+  border-radius: 70%;
+  display: block;
+  position: absolute;
+  border: 1px solid black;
+}
+
+.man #right-eye {
   border-radius: 10%;
   display: block;
   position: absolute;
   width: 30px;
   height: 17px;
-  top: 162px;
+  top: 170px;
 }
-.man #left-eye {
-  left: 154px;
-}
-.man #right-eye {
-  left: 240px;
-}
-.man #left-pupil, .man #right-pupil {
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 70%;
 
-  display: block;
-  position: absolute;
-}
 
 /* JUST BUTTON STYLES */
 
 .button {
   position: absolute;
-  top: 570px;
+  top: 590px;
   left: 50%;
   margin-left: -120px;
   color: white;
@@ -143,7 +153,7 @@ vertical-align: middle;
   transition: all .3s linear;
   -webkit-font-smoothing: antialiased;
   font-family: 'Varela Round', sans-serif;
-font-size: 20px;
+  font-size: 20px;
 }
 .button:hover {
   color: #996d73;
