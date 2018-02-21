@@ -206,6 +206,7 @@ h1, h2 {
 #scroll span {
   position: relative;
   padding-left:16px; /* position of arrow */
+
 }
 
 .arrow-bounce {
@@ -406,6 +407,10 @@ a:hover, a:active {
   z-index: 1;
   clear: both;
   margin-bottom: 30px;
+<<<<<<< HEAD
+=======
+  text-align: center;
+>>>>>>> 0278093083f9b480da09f06380c5c3b3db2b7fd0
 }
 .row--intro {
   padding-top: 20px;
