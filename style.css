@@ -98,8 +98,10 @@ vertical-align: middle;
 }
 
 .man {
-     background-image: url("https://s29.postimg.org/gnjqll7t3/final.png"); 
-       background-size:contain;
+     background-image: url("KiKiCircle.png"); 
+     background-size:contain;
+    background-size: 1100px 520px
+
 }
 
 
@@ -108,18 +110,19 @@ vertical-align: middle;
   display: block;
   position: absolute;
   width: 30px;
-  height: 17px;
-  top: 162px;
+  height: 27px;
+  top: 147px;
 }
 .man #left-eye {
-  left: 154px;
+  left: 122px;
 }
 .man #right-eye {
-  left: 240px;
+  left: 190px;
+  top: 155px;
 }
 .man #left-pupil, .man #right-pupil {
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   background: white;
   border-radius: 70%;
 
