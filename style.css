@@ -11,7 +11,6 @@ body {
 min-height: 488px;
 /*background: #dfced6;
 background: #ecadbe;*/
-
 background: #282931;
 
 }
@@ -98,15 +97,19 @@ vertical-align: middle;
 }
 
 .man {
-     background-image: url("KiKiCircle.png"); 
-     background-size:contain;
-    background-size: 1100px 520px
-
+   background-image: url("KiKiCircle.png"); 
+   background-size:contain;
+  background-size: 1100px 520px;
+   /*background-image: url("https://s9.postimg.org/cmbd0z8xb/kikicircle.png"); 
+     background-size:contain;*/
 }
+
+  
+
 
 
 .man #left-eye, .man #right-eye {
-  border-radius: 10%;
+  border-radius: 40%;
   display: block;
   position: absolute;
   width: 30px;
@@ -123,18 +126,40 @@ vertical-align: middle;
 .man #left-pupil, .man #right-pupil {
   width: 11px;
   height: 11px;
+/*  height: 40px;
+  top: 140px;
+}
+.man #left-eye {
+  left: 130px;
+}
+.man #right-eye {
+  left: 190px;
+}
+.man #left-pupil, .man #right-pupil {
+  width: 13px;
+  height: 13px;*/
   background: white;
   border-radius: 70%;
-
   display: block;
   position: absolute;
+  border: 1px solid black;
 }
+
+.man #right-eye {
+  border-radius: 10%;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  top: 150px;
+}
+
 
 /* JUST BUTTON STYLES */
 
 .button {
   position: absolute;
-  top: 570px;
+  top: 590px;
   left: 50%;
   margin-left: -120px;
   color: white;
@@ -146,7 +171,7 @@ vertical-align: middle;
   transition: all .3s linear;
   -webkit-font-smoothing: antialiased;
   font-family: 'Varela Round', sans-serif;
-font-size: 20px;
+  font-size: 20px;
 }
 .button:hover {
   color: #996d73;
