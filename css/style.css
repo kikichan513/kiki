@@ -97,7 +97,7 @@ vertical-align: middle;
 }
 
 .man {
-   background-image: url("KiKiCircle.png"); 
+   background-image: url("../kikiAnimation/KiKiCircle.png"); 
    background-size:contain;
   background-size: 1100px 520px;
    /*background-image: url("https://s9.postimg.org/cmbd0z8xb/kikicircle.png"); 
@@ -105,9 +105,6 @@ vertical-align: middle;
 }
 
   
-
-
-
 .man #left-eye, .man #right-eye {
   border-radius: 40%;
   display: block;

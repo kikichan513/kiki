@@ -324,6 +324,18 @@ a:hover, a:active {
     color:black;
 }
 
+#three a{
+  color:white;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding-left:200px;
+  padding-top: 250px;
+}
+#three a:hover, #three a:active {
+    color:black;
+}
+
 #four a{
   color:white;
   text-align: center;
@@ -409,7 +421,6 @@ a:hover, a:active {
   margin-bottom: 30px;
 }
 .row--intro {
-  padding-top: 20px;
   font-size: 16px;
   line-height: 38px;
   font-weight: 350;
@@ -444,6 +455,24 @@ a:hover, a:active {
 */    background-repeat:   no-repeat;
     background-size:     cover;
     margin: 30px;
+}
+
+#three {
+  background-color: #e5e500;
+}
+#three .container {
+  height:600px;
+}
+#three .row img{
+    background-color: #e5e500;
+    position: relative;
+    float: left;
+    width:  150px;
+    height: 240px;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin: 40px;
+    margin-top:100px;
 }
 
 #four .row img{
@@ -481,6 +510,10 @@ a:hover, a:active {
 
 .um img{
   margin-top:80px;
+}
+
+#seven .container {
+  height:500px;
 }
 
 /***************** TITLE *******************************/ 
