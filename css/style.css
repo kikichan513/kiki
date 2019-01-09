@@ -3,88 +3,81 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Varela+Round');
+@import "compass/css3";
 
-
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 body {
-min-height: 488px;
-/*background: #dfced6;
-background: #ecadbe;*/
-background: #282931;
-
-}
-
-
-#text-contain {
-  color: white;
-  text-align: center;
-vertical-align: middle;
-  font-size: 70px;
-  position: relative;
-  /*font-family: 'Varela Round', sans-serif;*/
+  font-family: 'Lato', arial, sans-serif;
+  color: #444444;
+  font-size: 16px;
+  margin: 8px;
+  line-height: 1.42857143;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Varela Round', sans-serif;}
-#container {
-   margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 600px;
-    height: 100px;
-    border-bottom: #6c9dd1;
-    overflow: hidden;
-  }
-  
-  #text-contain {
-    position: relative;
-    -webkit-animation: textslide 6s infinite;
-    animation: textslide 6s infinite;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F7F9FA;
+    background-color: #222;
+}
 
-  }
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
-  @media only screen and (max-width: 579px) {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
 
-   #text-contain { font-size: 50px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #28465a;
+}
 
-   margin-right: 30%;
-    margin-left: auto;
-    }
+h2, .h2 {
+  font-size: 30px;
+}
+
+h3, .h3 {
+  font-size: 24px;
+}
+
+header {
+  background-color: #AED6F1;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+    padding: 5% 0 4%;
 
 }
-  
-  h1 {
-    height: 100px; /*Height should be equal to it's container*/
-    width: 100%;
-    text-align: center;
-    font-color: white;
-    }
-    
-/*  #text3 {font-size: 100px;}
-*/  
-  @-webkit-keyframes textslide {
-    0% {top: 15%;}
-    25% {top: 15%;}
-    30% {top: -85%;}
-    55% {top: -85%;}
-    60% {top: -190%;}
-    85% {top: -190%;}
-    100% {top: 15%;}
-    }
-  
 
-  @keyframes textslide {
-    0% {top: 15%;}
-    25% {top: 15%;}
-    30% {top: -85%;}
-    55% {top: -85%;}
-    60% {top: -190%;}
-    85% {top: -190%;}
-    100% {top: 15%;}
-    }
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 0.5;
+  padding-top: 3%;
+  font-family: "Montserrat", sans-serif;
+}
 
+header h1 span {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 25px;
+  line-height: 1;
+}
 
+header p {
+  padding-top: 50px;
+}
 .man {
-  top: 20px;
+  top: 30px;
   display: block;
   width: 418px;
   height: 418px;
@@ -92,19 +85,13 @@ vertical-align: middle;
   margin: auto;
   background-repeat: no-repeat;
   background-position: center center;
-
-  /* BACKGROUND IMAGE URL IN BOTTOM OF CSS (BASE64) */
-}
-
-.man {
-   background-image: url("../kikiAnimation/KiKiCircle.png"); 
-   background-size:contain;
+  background-image: url("../kikiAnimation/KiKiCircle.png"); 
+  background-size:contain;
   background-size: 1100px 520px;
-   /*background-image: url("https://s9.postimg.org/cmbd0z8xb/kikicircle.png"); 
-     background-size:contain;*/
 }
 
-  
+
+
 .man #left-eye, .man #right-eye {
   border-radius: 40%;
   display: block;
@@ -123,23 +110,10 @@ vertical-align: middle;
 .man #left-pupil, .man #right-pupil {
   width: 11px;
   height: 11px;
-/*  height: 40px;
-  top: 140px;
-}
-.man #left-eye {
-  left: 130px;
-}
-.man #right-eye {
-  left: 190px;
-}
-.man #left-pupil, .man #right-pupil {
-  width: 13px;
-  height: 13px;*/
-  background: white;
+  background: #E4F9FF;
   border-radius: 70%;
   display: block;
   position: absolute;
-  border: 1px solid black;
 }
 
 .man #right-eye {
@@ -151,62 +125,142 @@ vertical-align: middle;
   top: 150px;
 }
 
+.button-area {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 320px;
+  }
 
-/* JUST BUTTON STYLES */
+#skills:hover {
+  opacity: .5;
+}
 
-.button {
-  position: absolute;
-  top: 590px;
-  left: 50%;
-  margin-left: -120px;
+#works:hover {
+  opacity: .5;
+}
+.button-area a {
+  padding: 1em 2.4em;
+  border-bottom: 3px solid white;
+  font-size: .9em;
+  margin: 1em;
   color: white;
-  display: inline-block;
-  width: 240px;
-  line-height: 40px;
-  text-align: center;
   text-decoration: none;
-  transition: all .3s linear;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 20px;
-}
-.button:hover {
-  color: #996d73;
-}
+  flex-grow: 1;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 
-.button span {
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  border: 2px solid white;
-  transition: all .3s linear;
-}
-
-.button span:nth-child(1) {
-  bottom: 5px;
-  right: 5px;
-  border-top-width: 0;
-  border-left-width: 0;
-}
-.button span:nth-child(2) {
-  bottom: 5px;
-  left: 5px;
-  border-top-width: 0;
-  border-right-width: 0;
-}
-.button span:nth-child(3) {
-  top: 5px;
-  left: 5px;
-  border-bottom-width: 0;
-  border-right-width: 0;
-}
-.button span:nth-child(4) {
-  top: 5px;
-  right: 5px;
-  border-bottom-width: 0;
-  border-left-width: 0;
 }
 
 /* 
 Background is in base64 format so to make code more readable I just moved it here.
 */
+
+.btn{
+  display: block;
+  float: left;
+  width: 70px; height: 40px;
+  background-color:#999;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+  text-decoration: none;
+  margin: 10px;
+  overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+/* Social media colors */
+.facebook{background: #3B5998;}
+.twitter{background: #00aced;}
+.gplus{background: #dd4b39;}
+.pinterest{background: #cb2027;}
+.dribble{background: #ea4c89;}
+.skype{background: #12A5F4;}
+.behance{background: #005DFF;}
+.linked{background: #005DFF;}
+.pdf{background: #C70039  ;}
+.github{background: #2ECC71;}
+
+.icons{
+  display:block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: 1;
+  color: #fff;
+  font-size: 24px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.text{
+  color: #fff;
+  font-size: 11px;
+  position: absolute;
+  right: -100px;
+  top: 0;
+  opacity: 0;
+
+  -webkit-transition: all .3s ;
+  -moz-transition: all .3s ;
+  -ms-transition: all .3s ;
+  -o-transition: all .3s ;
+  transition: all .3s ;
+ }
+ .btn:hover .icons{
+   left: -100px;
+   opacity: 0;
+ }
+ .btn:hover .text{
+   right: 25%;
+   opacity: 1;
+ }
+
+.opacity .text{
+  display:block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+}
+
+.opacity .btn:hover .icons{
+  left: -40px;
+  opacity: 0;
+}
+
+.opacity .btn:hover .text{
+ left: 0;
+}
+
+.clearfix:after{
+  content:"";
+  clear: both;
+  display: table;
+}
+
+.wrap{
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+.wrap h2{
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #111;
+}
