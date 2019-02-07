@@ -304,6 +304,7 @@ img {
   bottom: 0;
   left: 0;
   width: 100%;
+  color: #f36b21;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
@@ -317,6 +318,7 @@ img {
   text-transform: none;
   letter-spacing: 0;
   font-size: 16px;
+  color: #f36b21;
 }
 .project__title:hover a {
   color: #f36b21;
